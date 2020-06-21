@@ -6295,6 +6295,18 @@ input[type=button].btn-block {
 .nav-tabs .nav-item {
   margin-bottom: -1px;
 }
+.sec-nav-item {
+  display: none;
+}
+@media (max-width: 991px) {
+  .sec-nav-item {
+    display: -webkit-box;
+    display: flex;
+  }
+  #menuBox  {
+    display: none;
+  }
+}
 .nav-tabs .nav-link {
   border: 1px solid transparent;
   border-top-left-radius: 0.35rem;
