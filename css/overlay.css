@@ -2,12 +2,16 @@
     height: 100%;
     width: 100%;
     position: fixed;
-    z-index: 1000;
+    z-index: 9;
     top: 0;
     left: 100%;
     background-color: rgb(0,0,0);
     overflow-x: hidden;
     transition: 0.5s;
+}
+
+body .overlay-menu  {
+  overflow: hidden;
 }
 
 .overlay-content li {
