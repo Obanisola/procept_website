@@ -12,6 +12,47 @@
         <link rel="icon" type="image/x-icon" href="assets/img/favicon.png" />
         <script data-search-pseudo-elements defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.min.js" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.24.1/feather.min.js" crossorigin="anonymous"></script>
+
+        <style>
+            @media (min-width: 992px) {
+                .parent-service-navbar .service-navbar {
+                    padding-top: 0;
+                    padding-bottom: 0;
+                }
+            }
+
+            .service-navbar {
+                font-size: 13px;
+            }
+
+            .parent-service-navbar .service-navbar .nav-link {
+                padding-right: 2rem;
+                padding-left: 2rem;
+                padding-top: 1rem;
+                padding-bottom: 1rem;
+            }
+
+            #active   {
+                color: #0061f2;
+            }
+
+            .content {
+                padding: 16px;
+            }
+
+            .sticky {
+                position: fixed;
+                top: 0;
+                width: 100%;
+                z-index: 2;
+            }
+
+            .sticky + .content {
+                padding-top: 102px;
+            }
+
+
+        </style>
     </head>
     <body>
         <div id="circle" class="circle"></div>
@@ -23,7 +64,7 @@
                             <a class="navbar-brand text-dark" href="index.html">Procept</a><button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><i data-feather="menu"></i></button>
                             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                                 <ul class="navbar-nav mr-auto ml-lg-auto">
-                                    <li class="nav-item"><a class="nav-link" href="consulting.html">Consulting </a></li>
+                                    <li class="nav-item"><a class="nav-link" id="active" href="consulting.html">Consulting </a></li>
                                     <li class="nav-item"><a class="nav-link" href="index.html">Training </a></li>
                                     <li class="nav-item"><a class="nav-link" href="index.html">Software Solutions </a></li>
                                     <hr class="sec-nav-item">
@@ -60,16 +101,34 @@
                                 </a>
                             </div>
                         </div>
+                    </nav>                    
+                    
+                    <nav id="myHeader" class="navbar parent-service-navbar navbar-marketing navbar-expand-lg bg-black navbar-light no-cursor" style="max-height: 50px;">
+                        <div class="container" style="padding-left: 1rem; padding-right: 1rem;">
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav mr-auto ml-lg-auto service-navbar">
+                                    <li class="nav-item"><a class="nav-link text-white" href="consulting.html">Services</a></li>
+                                    <li class="nav-item"><a class="nav-link text-white" href="index.html">Case Studies</a></li>
+                                    <li class="nav-item"><a class="nav-link text-white" href="index.html">Insights</a></li>
+                                    <li class="nav-item"><a class="nav-link text-white" href="index.html">Clients</a></li>
+                                    <li class="nav-item"><a class="nav-link text-white" href="index.html">Contact</a></li>
+                                </ul>
+
+                            </div>
+                        </div>
                     </nav>
-                    <header class="page-header page-header-light bg-white no-cursor">
+
+        
+                <!-- <section id="mainServicePage" class="content"> -->
+                    <header class="page-header page-header-light bg-white no-cursor" style="background-image: url(assets/img/consulting_bg.png); background-size: cover; background-repeat: no-repeat; background-position: center;">
                         <div class="page-header-content" id="headerContent">
                             <div class="container">
                                 
-                                    <h3>Welcome to Procept</h3>
-                                    <h1>
-                                        Actively transforming how <a href="#" class="no-cursor">organizations</a>
-                                        <br> are managing people, <a href="#" class="no-cursor">knowledge</a>, <a href="#" class="no-cursor">process</a> <br>
-                                        and <a href="#" class="no-cursor">technology</a>.
+                                    <h3 class="text-white">Consulting</h3>
+                                    <h1 class="text-white">
+                                        This is a long caption for <a href="#" class="no-cursor">Consultancy</a>
+                                        <br> some words are highlighted in <a href="#" class="no-cursor">blue</a>, <br>
+                                        just for <a href="#" class="no-cursor">emphasis</a>.
                                     </h1>                    
 
                             </div>
@@ -77,147 +136,8 @@
                     </header>
 
 
-                    <section class="bg-black py-5">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-6">
-                                    <div class="text-center">
-                                        <div class="text-xs text-uppercase-expanded text-white mb-2">This is a Heading</div>
-                                        <h2 class="mb-5">This content will be a subheading that is related the following content</h2>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row mb-10 z-1">
-                                <div class="col-lg-6 mb-5 prod-card">
-                                    <div class="card h-100">
-                                        <div class="card-body">
-                                            <h5>Training Catalogue</h5>
-                                            <p class="card-text">Explore training and certification courses</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 mb-5 prod-card">
-                                    <div class="card h-100">
-                                        <div class="card-body">
-                                            <h5>Training Calender</h5>
-                                            <p class="card-text">Plan your path to personal and career development</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 mb-5 prod-card">
-                                    <div class="card h-100">
-                                        <div class="card-body">
-                                            <h5>Industry Insights</h5>
-                                            <p class="card-text">Discover the world with a new perspective</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 mb-5 prod-card">
-                                    <div class="card h-100">
-                                        <div class="card-body p-5">
-                                            <h5>Case Studies</h5>
-                                            <p class="card-text">Collected onsite and internal research reports</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
 
-
-                    <section class="bg-img-cover overlay overlay-80 py-10" style='background-image: url("assets/img/procept_web_bg1.png");'>
-                        <div class="container position-relative z-1">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-10">
-                                    <div class="display-4 text-center py-10 my-10 text-white">This is a long <span class="text-primary">caption</span>, and the words in <span class="text-primary">blue</span> are to be considered <span class="text-primary">captivating</span>.</div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-
-                    <section class="bg-white py-10">
-                        <div class="container z-1">
-                            <div class="card mb-5" data-aos="fade-right">
-                                <div class="row no-gutters">
-                                    <div class="col-md-6"><img class="img-fluid" src="assets/img/procept_accreditations_800_x_500.png" alt="..." /></div>
-                                    <div class="col-md-6">
-                                        <div class="card-body d-flex align-items-center justify-content-center h-100 flex-column">
-                                            <h3 class="card-title font-weight-bold text-uppercase mb-2">Accreditations</h3>
-                                            <p class="card-text font-weight-light mb-4">Short Caption</p>
-                                            <a class="btn partner-btn btn-outline-dark btn-marketing rounded-0" href="#!">View All</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card mb-5" data-aos="fade-left">
-                                <div class="row no-gutters">
-                                    <div class="col-md-6 order-1 order-md-0">
-                                        <div class="card-body d-flex align-items-center justify-content-center h-100 flex-column">
-                                            <h3 class="card-title font-weight-bold text-uppercase mb-2">University Partners</h3>
-                                            <p class="card-text font-weight-light mb-4">Short Caption</p>
-                                            <a class="btn partner-btn btn-outline-dark btn-marketing rounded-0" href="#!">View All</a>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6 order-0 order-md-1"><img class="img-fluid" src="assets/img/procept_university_800_x_500.png" alt="..." /></div>
-                                </div>
-                            </div>
-                            <div class="card mb-5" data-aos="fade-right">
-                                <div class="row no-gutters">
-                                    <div class="col-md-6"><img class="img-fluid" src="assets/img/procept_technology_800_x_500.png" alt="..." /></div>
-                                    <div class="col-md-6">
-                                        <div class="card-body d-flex align-items-center justify-content-center h-100 flex-column">
-                                            <h3 class="card-title font-weight-bold text-uppercase mb-2">Technology Partners</h3>
-                                            <p class="card-text font-weight-light mb-4">Short Caption</p>
-                                            <a class="btn partner-btn btn-outline-dark btn-marketing rounded-0" href="#!">View All</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card" data-aos="fade-left">
-                                <div class="row no-gutters">
-                                    <div class="col-md-6"><img class="img-fluid" src="assets/img/procept_global_clients_800_x_500.png" alt="..." /></div>
-                                    <div class="col-md-6">
-                                        <div class="card-body d-flex align-items-center justify-content-center h-100 flex-column">
-                                            <h3 class="card-title font-weight-bold text-uppercase mb-2">Global Clients</h3>
-                                            <p class="card-text font-weight-light mb-4">Short Caption<Caption></Caption></p>
-                                            <a class="btn partner-btn btn-outline-dark btn-marketing rounded-0" href="#!">View All</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-
-
-
-                    <section class="bg-light py-10">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8 text-center">
-                                    <h2>Contact us</h2>
-                                    <p class="mb-5">This is a short caption for contact us</p>
-                                    <div class="row">
-                                        <div class="col">
-                                            <div class="card">
-                                                <div class="card-body">
-                                                    <div class="icon-stack icon-stack-lg bg-black text-white mb-3"><i data-feather="mail"></i></div>
-                                                    <div class="small"><a href="#!">hello@example.com</a></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col">
-                                            <div class="card">
-                                                <div class="card-body">
-                                                    <div class="icon-stack icon-stack-lg bg-black text-white mb-3"><i data-feather="smartphone"></i></div>
-                                                    <div class="small">555-123-4567</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
+                <!-- </section> -->
                 </main>
             </div>
 
@@ -334,6 +254,21 @@
             kinet.on('end', function() {
             console.log('end');
             });
+
+
+            window.onscroll = function() {myFunction()};
+
+            var header = document.getElementById("myHeader");
+            var sticky = header.offsetTop;
+
+            function myFunction() {
+            if (window.pageYOffset > sticky) {
+                header.classList.add("sticky");
+            } else {
+                header.classList.remove("sticky");
+            }
+            }
+
         </script>
     </body>
 </html>
