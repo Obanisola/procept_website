@@ -60,6 +60,10 @@
             .active {
                 color: #0061f2;
             }
+
+            .circle {
+                display: none;
+            }
         </style>
     </head>
     <body>
@@ -115,10 +119,10 @@
                         <div class="container" style="padding-left: 1rem; padding-right: 1rem;">
                             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                                 <ul class="navbar-nav mr-auto ml-lg-auto service-navbar">
-                                    <li class="nav-item"><a class="nav-link font-weight-bold text-white" href="services.html">Services</a></li>
+                                    <li class="nav-item"><a class="nav-link font-weight-bold text-primary" href="services.html">Services</a></li>
                                     <li class="nav-item"><a class="nav-link font-weight-bold text-white" href="case-studies.html">Case Studies</a></li>
                                     <li class="nav-item"><a class="nav-link font-weight-bold text-white" href="partners.html">Partners</a></li>
-                                    <li class="nav-item"><a class="nav-link font-weight-bold text-primary" href="clients.html">Clients</a></li>
+                                    <li class="nav-item"><a class="nav-link font-weight-bold text-white" href="clients.html">Clients</a></li>
                                     <li class="nav-item"><a class="nav-link font-weight-bold text-white" href="contact.html">Contact</a></li>
                                 </ul>
 
@@ -127,84 +131,71 @@
                     </nav>
 
 
-                    <header class="page-header page-header-dark bg-primary min-vh-100" style=''>
-                        <div class="page-header-content">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-lg">
-                                        <h1 class="page-header-title mb-3">Global Clients</h1>
-                                         <p class="mb-0">This is a caption that describes consulting at Procept </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </header>
-
-                    <section class="bg-white py-10">
+                    <section class="bg-light py-10">
                         <div class="container">
-                            <div class="text-center pb-1">
-                                <div class="row justify-content-center">
-                                    <div class="col-lg-8">
-                                        <h1 class="page-header-title mb-3 text-black">North America Clients</h1>
-                                        <p class="page-header-text mb-0 text-black">This a caption about Procept consulting partners</p>
-                                    </div>
+                            <div class="d-flex align-items-center mb-5">
+                                <div class="icon-stack icon-stack-lg bg-black text-white"><i class="fas fa-sitemap"></i></i></div>
+                                <div class="ml-3">
+                                    <h2 class="mb-0">IT Service Management Consulting</h2>
+                                    <p class="lead mb-0">This is a short caption.</p>
                                 </div>
                             </div>
-
-                            <div class="row py-10">
-                                <div class="col-md-6 col-xl-4 mb-5 mt-n5">
-                                    <a class="card card-portfolio h-100" href="#!"
-                                        ><img class="card-img-top" src="https://source.unsplash.com/jWQj5Wjepuk/700x500" alt="..." />
-                                        <div class="card-body"><div class="card-title">University of A</div></div></a
-                                    >
+                            <hr>
+                            <p class="lead">IT Service Management (ITSM) is a discipline for managing information technology (IT) systems from the customer's perspective of IT's contribution to the business. in the simplest terms, ITSM is the management of IT services to meet customer requirements. The three objectives of ITSM are:</p>
+                            <ul>
+                                <li>Integrating services with the current and future needs of the business and its customers.</li>
+                                <li>Improving the quality of the services delivered.</li>
+                                <li>Reducing the long-term cost of service provision.</li>
+                            </ul>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui quisquam animi temporibus ipsum iusto necessitatibus laudantium beatae. Eligendi dolorum laudantium numquam? Officiis nemo error animi aliquam dolor consequatur ducimus unde.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui repellat magni eaque beatae explicabo fugit placeat earum, dolores quaerat aperiam vero adipisci quidem minus officiis blanditiis unde? Incidunt, ea ad.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis sed illum soluta, quaerat et deleniti magnam laudantium, non omnis numquam quos placeat. Porro autem consectetur dolor minima voluptatum modi maiores.</p>
+                            <br>
+                            <div class="accordion accordion-faq mb-5" id="authAccordion">
+                                <div class="card border-bottom">
+                                    <div class="card-body bg-black">
+                                        <div class="accordion-faq-title">
+                                            <div class="mr-2">
+                                                <h4 class="mb-0 text-white">Concept and Processes</h4>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="col-md-6 col-xl-4 mb-5 mt-md-n5">
-                                    <a class="card card-portfolio h-100" href="#!"
-                                        ><img class="card-img-top" src="https://source.unsplash.com/Ecnx13MEPK0/700x500" alt="..." />
-                                        <div class="card-body"><div class="card-title">University of B</div></div></a
-                                    >
+                                <div class="card accordion-faq-item">
+                                    <a class="card-header" id="authHeadingOne" data-toggle="collapse" data-target="#authCollapseOne" aria-expanded="true" aria-controls="authCollapseOne" href="javascript:void(0);"
+                                        ><div class="accordion-faq-item-heading">Project Governance Frameworks<i class="accordion-faq-item-heading-arrow" data-feather="chevron-down"></i></div
+                                    ></a>
+                                    <div class="collapse show" id="authCollapseOne" aria-labelledby="authHeadingOne" data-parent="#authAccordion"><div class="card-body border-bottom">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</div></div>
                                 </div>
-                                <div class="col-md-6 col-xl-4 mb-5 mt-xl-n5">
-                                    <a class="card card-portfolio h-100" href="#!"
-                                        ><img class="card-img-top" src="https://source.unsplash.com/eUCy1jb_B7I/700x500" alt="..." />
-                                        <div class="card-body"><div class="card-title">University of C</div></div></a
-                                    >
+                                <div class="card accordion-faq-item">
+                                    <a class="card-header collapsed" id="authHeadingTwo" data-toggle="collapse" data-target="#authCollapseTwo" aria-expanded="true" aria-controls="authCollapseTwo" href="javascript:void(0);"
+                                        ><div class="accordion-faq-item-heading">IT Audit<i class="accordion-faq-item-heading-arrow" data-feather="chevron-down"></i></div
+                                    ></a>
+                                    <div class="collapse" id="authCollapseTwo" aria-labelledby="authHeadingTwo" data-parent="#authAccordion"><div class="card-body border-bottom">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</div></div>
                                 </div>
-                                <div class="col-md-6 col-xl-4 mb-5">
-                                    <a class="card card-portfolio h-100" href="#!"
-                                        ><img class="card-img-top" src="https://source.unsplash.com/cuTcfqsES6o/700x500" alt="..." />
-                                        <div class="card-body"><div class="card-title">University of D</div></div></a
-                                    >
+                                <div class="card accordion-faq-item">
+                                    <a class="card-header collapsed" id="authHeadingThree" data-toggle="collapse" data-target="#authCollapseThree" aria-expanded="true" aria-controls="authCollapseThree" href="javascript:void(0);"
+                                        ><div class="accordion-faq-item-heading">IT Organization Design<i class="accordion-faq-item-heading-arrow" data-feather="chevron-down"></i></div
+                                    ></a>
+                                    <div class="collapse" id="authCollapseThree" aria-labelledby="authHeadingThree" data-parent="#authAccordion"><div class="card-body border-bottom">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</div></div>
                                 </div>
-                                <div class="col-md-6 col-xl-4 mb-5">
-                                    <a class="card card-portfolio h-100" href="#!"
-                                        ><img class="card-img-top" src="https://source.unsplash.com/jipR1oTCO7U/700x500" alt="..." />
-                                        <div class="card-body"><div class="card-title">University of E</div></div></a
-                                    >
+                                <div class="card accordion-faq-item">
+                                    <a class="card-header collapsed" id="authHeadingFour" data-toggle="collapse" data-target="#authCollapseFour" aria-expanded="true" aria-controls="authCollapseFour" href="javascript:void(0);"
+                                        ><div class="accordion-faq-item-heading">ITSM Audit<i class="accordion-faq-item-heading-arrow" data-feather="chevron-down"></i></div
+                                    ></a>
+                                    <div class="collapse" id="authCollapseFour" aria-labelledby="authHeadingFour" data-parent="#authAccordion"><div class="card-body border-bottom">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</div></div>
                                 </div>
-                                <div class="col-md-6 col-xl-4 mb-5">
-                                    <a class="card card-portfolio h-100" href="#!"
-                                        ><img class="card-img-top" src="https://source.unsplash.com/n3sqjJzZiBM/700x500" alt="..." />
-                                        <div class="card-body"><div class="card-title">University of F</div></div></a
-                                    >
+                                <div class="card accordion-faq-item">
+                                    <a class="card-header collapsed" id="authHeadingFive" data-toggle="collapse" data-target="#authCollapseFive" aria-expanded="true" aria-controls="authCollapseFive" href="javascript:void(0);"
+                                        ><div class="accordion-faq-item-heading">ITSM Practice Design<i class="accordion-faq-item-heading-arrow" data-feather="chevron-down"></i></div
+                                    ></a>
+                                    <div class="collapse" id="authCollapseFive" aria-labelledby="authHeadingFive" data-parent="#authAccordion"><div class="card-body border-bottom">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</div></div>
                                 </div>
-                                <div class="col-md-6 col-xl-4 mb-5">
-                                    <a class="card card-portfolio h-100" href="#!"
-                                        ><img class="card-img-top" src="https://source.unsplash.com/Zr7MxECDTQ8/700x500" alt="..." />
-                                        <div class="card-body"><div class="card-title">University of G</div></div></a
-                                    >
-                                </div>
-                                <div class="col-md-6 col-xl-4 mb-5">
-                                    <a class="card card-portfolio h-100" href="#!"
-                                        ><img class="card-img-top" src="https://source.unsplash.com/QcyenJDqDzw/700x500" alt="..." />
-                                        <div class="card-body"><div class="card-title">University of H</div></div></a
-                                    >
-                                </div>
-                                <div class="col-md-6 col-xl-4 mb-5">
-                                    <a class="card card-portfolio h-100" href="#!"
-                                        ><img class="card-img-top" src="https://source.unsplash.com/TIutDBFEtcY/700x500" alt="..." />
-                                        <div class="card-body"><div class="card-title">University of I</div></div></a
-                                    >
+                                <div class="card accordion-faq-item">
+                                    <a class="card-header collapsed" id="authHeadingSix" data-toggle="collapse" data-target="#authCollapseSix" aria-expanded="true" aria-controls="authCollapseSix" href="javascript:void(0);"
+                                        ><div class="accordion-faq-item-heading">Establish a Service Management Practice<i class="accordion-faq-item-heading-arrow" data-feather="chevron-down"></i></div
+                                    ></a>
+                                    <div class="collapse" id="authCollapseSix" aria-labelledby="authHeadingSix" data-parent="#authAccordion"><div class="card-body border-bottom">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</div></div>
                                 </div>
                             </div>
                         </div>
@@ -215,8 +206,8 @@
                             <div class="text-center pb-1">
                                 <div class="row justify-content-center">
                                     <div class="col-lg-8">
-                                        <h1 class="page-header-title mb-3 text-black">Africa Clients</h1>
-                                        <p class="page-header-text mb-0 text-black">This a caption about Procept consulting partners</p>
+                                        <h1 class="page-header-title mb-3 text-black">Consulting Clients</h1>
+                                        <p class="page-header-text mb-0 text-black">This a caption about Procept  Clients</p>
                                     </div>
                                 </div>
                             </div>
@@ -258,19 +249,19 @@
                                         <div class="card-body"><div class="card-title">University of F</div></div></a
                                     >
                                 </div>
-                                <div class="col-md-6 col-xl-4 mb-5">
+                                <div class="col-md-6 col-xl-4 mb-2">
                                     <a class="card card-portfolio h-100" href="#!"
                                         ><img class="card-img-top" src="https://source.unsplash.com/Zr7MxECDTQ8/700x500" alt="..." />
                                         <div class="card-body"><div class="card-title">University of G</div></div></a
                                     >
                                 </div>
-                                <div class="col-md-6 col-xl-4 mb-5">
+                                <div class="col-md-6 col-xl-4 mb-2">
                                     <a class="card card-portfolio h-100" href="#!"
                                         ><img class="card-img-top" src="https://source.unsplash.com/QcyenJDqDzw/700x500" alt="..." />
                                         <div class="card-body"><div class="card-title">University of H</div></div></a
                                     >
                                 </div>
-                                <div class="col-md-6 col-xl-4 mb-5">
+                                <div class="col-md-6 col-xl-4 mb-2">
                                     <a class="card card-portfolio h-100" href="#!"
                                         ><img class="card-img-top" src="https://source.unsplash.com/TIutDBFEtcY/700x500" alt="..." />
                                         <div class="card-body"><div class="card-title">University of I</div></div></a
@@ -278,11 +269,12 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="text-center"><a class="btn btn-primary btn-marketing rounded-0" href="services.html">Back to Services</a></div>
                     </section>
 
 
 
-                    <section class="bg-light py-5">
+                    <section class="bg-light py-10">
                         <div class="container">
                             <div class="row justify-content-center">
                                 <div class="col-lg-8 text-center">
@@ -399,35 +391,6 @@
         <script src="../js/overlay.js"></script>
         <script src="https://unpkg.com/kinet@2.2.1/dist/kinet.min.js"></script>
         <script>
-            // create instance of kinet with custom settings
-            var kinet = new Kinet({
-            acceleration: 0.06,
-            friction: 0.20,
-            names: ["x", "y"],
-            });
-
-            // select circle element
-            var circle = document.getElementById('circle');
-
-            // set handler on kinet tick event
-            kinet.on('tick', function(instances) {
-            circle.style.transform = `translate3d(${ (instances.x.current) }px, ${ (instances.y.current) }px, 0) rotateX(${ (instances.x.velocity/2) }deg) rotateY(${ (instances.y.velocity/2) }deg)`;
-            });
-
-            // call kinet animate method on mousemove
-            document.addEventListener('mousemove', function (event) {
-            kinet.animate('x', event.clientX - window.innerWidth/2);
-            kinet.animate('y', event.clientY - window.innerHeight/2);
-            });
-
-            // log
-            kinet.on('start', function() {
-            console.log('start');
-            });
-
-            kinet.on('end', function() {
-            console.log('end');
-            });
 
 
             window.onscroll = function() {myFunction()};
