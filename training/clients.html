@@ -7,9 +7,9 @@
         <meta name="description" content="" />
         <meta name="author" content="" />
         <title>Procept</title>
-        <link href="../../css/styles.css" rel="stylesheet" />
-        <link href="../../css/overlay.css" rel="stylesheet" />
-        <link rel="icon" type="image/x-icon" href="../../assets/img/favicon.png" />
+        <link href="../css/styles.css" rel="stylesheet" />
+        <link href="../css/overlay.css" rel="stylesheet" />
+        <link rel="icon" type="image/x-icon" href="../assets/img/favicon.png" />
         <script data-search-pseudo-elements defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.min.js" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.24.1/feather.min.js" crossorigin="anonymous"></script>
 
@@ -60,10 +60,6 @@
             .active {
                 color: #0061f2;
             }
-
-            .circle {
-                display: none;
-            }
         </style>
     </head>
     <body>
@@ -73,10 +69,10 @@
                 <main>
                     <nav class="navbar navbar-marketing navbar-expand-lg bg-white navbar-light no-cursor">
                         <div class="container-fluid" style="padding-left: 1rem; padding-right: 1rem;">
-                            <a class="navbar-brand text-dark" href="../../index.html">Procept</a><button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><i data-feather="menu"></i></button>
+                            <a class="navbar-brand text-dark" href="../index.html">Procept</a><button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><i data-feather="menu"></i></button>
                             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                                 <ul class="navbar-nav mr-auto ml-lg-auto">
-                                    <li class="nav-item"><a class="nav-link" id="active" href="../services.html">Consulting </a></li>
+                                    <li class="nav-item"><a class="nav-link" id="active" href="services.html">Consulting </a></li>
                                     <li class="nav-item"><a class="nav-link" href="#">Training </a></li>
                                     <li class="nav-item"><a class="nav-link" href="index.html">Software Solutions </a></li>
                                     <hr class="sec-nav-item">
@@ -119,86 +115,174 @@
                         <div class="container" style="padding-left: 1rem; padding-right: 1rem;">
                             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                                 <ul class="navbar-nav mr-auto ml-lg-auto service-navbar">
-                                    <li class="nav-item"><a class="nav-link font-weight-bold text-white" href="../services.html">Services</a></li>
-                                    <li class="nav-item"><a class="nav-link font-weight-bold text-primary" href="../case-studies.html">Case Studies</a></li>
-                                    <li class="nav-item"><a class="nav-link font-weight-bold text-white" href="../partners.html">Partners</a></li>
-                                    <li class="nav-item"><a class="nav-link font-weight-bold text-white" href="../clients.html">Clients</a></li>
-                                    <li class="nav-item"><a class="nav-link font-weight-bold text-white" href="../contact.html">Contact</a></li>
+                                    <li class="nav-item"><a class="nav-link font-weight-bold text-white" href="services.html">Services</a></li>
+                                    <li class="nav-item"><a class="nav-link font-weight-bold text-white" href="case-studies.html">Case Studies</a></li>
+                                    <li class="nav-item"><a class="nav-link font-weight-bold text-white" href="partners.html">Partners</a></li>
+                                    <li class="nav-item"><a class="nav-link font-weight-bold text-primary" href="clients.html">Clients</a></li>
+                                    <li class="nav-item"><a class="nav-link font-weight-bold text-white" href="contact.html">Contact</a></li>
                                 </ul>
 
                             </div>
                         </div>
                     </nav>
 
-                    <section class="bg-white pt-10">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-10 col-xl-8">
-                                    <div class="single-post">
-                                        <h1>Title of Case Study</h1>
-                                        <p class="lead">A simple overview of the case study.</p>
-                                        <div class="d-flex align-items-center justify-content-between mb-5">
-                                            <div class="single-post-meta mr-4">
-                                                <img class="single-post-meta-img" src="../../assets/img/favicon.png" />
-                                                <div class="single-post-meta-details">
-                                                    <div class="single-post-meta-details-name">Procept Nigeria</div>
-                                                    <div class="single-post-meta-details-date">Feb 5 &middot; 6 min read</div>
-                                                </div>
-                                            </div>
-                                            <div class="single-post-meta-links">
-                                                <a href="#!"><i class="fab fa-twitter fa-fw"></i></a><a href="#!"><i class="fab fa-facebook-f fa-fw"></i></a><a href="#!"><i class="fab fa-whatsapp fa-fw"></i></a><a href="#!"><i class="fas fa-cloud-download-alt"></i></a>
-                                            </div>
-                                        </div>
+
+                    <header class="page-header page-header-dark bg-primary min-vh-100" style=''>
+                        <div class="page-header-content">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg">
+                                        <h1 class="page-header-title mb-3">Global Clients</h1>
+                                         <p class="mb-0">This is a caption that describes consulting at Procept </p>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </section>
-                    <section class="bg-white pb-10">
+                    </header>
+
+                    <section class="bg-white py-10">
                         <div class="container">
-                            <hr>
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti quis voluptas amet accusamus temporibus corporis quia asperiores magni laudantium dolore iusto, adipisci rem id ratione repellat! Fuga esse molestias accusamus!</p>
-                                    <p class="mb-0">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet error pariatur voluptatibus consequuntur natus unde porro, soluta quisquam facere, deserunt repellat iusto odit labore doloremque velit qui mollitia quo numquam.</p>
-                                </div>
-                                <div class="col-lg-10"><img class="img-fluid rounded-lg shadow my-5" src="https://source.unsplash.com/DGH1u80sZik/1200x900" /></div>
-                                <div class="col-lg-8">
-                                    <h4>Heading</h4>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit a, iusto ratione minus labore illum sequi optio recusandae perferendis, et beatae corrupti! Nemo aut inventore maxime eligendi optio cupiditate et.</p>
-                                    <p class="pb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. A eius cupiditate similique officia aperiam adipisci reprehenderit veniam voluptate eum fugit voluptatem, aspernatur minus dolorum nemo impedit odit sit odio consectetur!</p>
-                                </div>
-                                <div class="col-lg-10">
-                                    <div class="card-columns card-columns-case-study mb-5">
-                                        <div class="card"><img class="img-fluid rounded-lg" src="https://source.unsplash.com/ZIihTgf5uGg/800x700" /></div>
-                                        <div class="card"><img class="img-fluid rounded-lg" src="https://source.unsplash.com/Eu_jPNRNub8/800x900" /></div>
-                                        <div class="card"><img class="img-fluid rounded-lg" src="https://source.unsplash.com/VItxz6u036U/800x900" /></div>
-                                        <div class="card"><img class="img-fluid rounded-lg" src="https://source.unsplash.com/E_dRKdBhxk4/800x700" /></div>
+                            <div class="text-center pb-1">
+                                <div class="row justify-content-center">
+                                    <div class="col-lg-8">
+                                        <h1 class="page-header-title mb-3 text-black">North America Clients</h1>
+                                        <p class="page-header-text mb-0 text-black">This a caption about Procept consulting partners</p>
                                     </div>
                                 </div>
-                                <div class="col-lg-8">
-                                    <div class="card bg-primary-soft text-primary text-center mb-5">
-                                        <div class="card-body"><p class="card-text lead">"Working with this agency helped us boost sales and raise brand awareness across all of our product lines."</p></div>
-                                    </div>
-                                    <h4>Heading</h4>
-                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa provident hic quaerat. Accusamus quidem quos fugit a aspernatur, magni obcaecati tenetur similique eaque, sequi id alias veritatis eius, maiores animi.</p>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A neque ut reiciendis suscipit animi quaerat, est, repellat unde distinctio hic sapiente asperiores perspiciatis id! Quasi eveniet cupiditate quisquam. Itaque, esse.</p>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet nobis odio modi optio sapiente neque saepe, facere culpa, doloribus voluptatem nemo quam, cumque fugiat qui excepturi. Nostrum, error. Impedit, quis!</p>
-                                    <ul class="fa-ul">
-                                        <li class="mb-3"><span class="fa-li"></span><i class="fas fa-check mr-2 text-green"></i>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</li>
-                                        <li class="mb-3"><span class="fa-li"></span><i class="fas fa-check mr-2 text-green"></i>Quidem dicta iste maiores eligendi numquam nam voluptas quia nisi consequatur illo neque sunt error doloremque vel.</li>
-                                        <li class="mb-3"><span class="fa-li"></span><i class="fas fa-check mr-2 text-green"></i>Animi aliquam dolores suscipit saepe ratione corrupti veniam.</li>
-                                        <li><span class="fa-li"></span><i class="fas fa-check mr-2 text-green"></i>Molestiae minima aliquam consequatur eius ab dignissimos at maxime odit culpa excepturi vero magnam vitae ipsa! Ducimus.</li>
-                                    </ul>
-                                    <hr class="my-5" />
+                            </div>
+
+                            <div class="row py-10">
+                                <div class="col-md-6 col-xl-4 mb-5 mt-n5">
+                                    <a class="card card-portfolio h-100" href="#!"
+                                        ><img class="card-img-top" src="https://source.unsplash.com/jWQj5Wjepuk/700x500" alt="..." />
+                                        <div class="card-body"><div class="card-title">University of A</div></div></a
+                                    >
+                                </div>
+                                <div class="col-md-6 col-xl-4 mb-5 mt-md-n5">
+                                    <a class="card card-portfolio h-100" href="#!"
+                                        ><img class="card-img-top" src="https://source.unsplash.com/Ecnx13MEPK0/700x500" alt="..." />
+                                        <div class="card-body"><div class="card-title">University of B</div></div></a
+                                    >
+                                </div>
+                                <div class="col-md-6 col-xl-4 mb-5 mt-xl-n5">
+                                    <a class="card card-portfolio h-100" href="#!"
+                                        ><img class="card-img-top" src="https://source.unsplash.com/eUCy1jb_B7I/700x500" alt="..." />
+                                        <div class="card-body"><div class="card-title">University of C</div></div></a
+                                    >
+                                </div>
+                                <div class="col-md-6 col-xl-4 mb-5">
+                                    <a class="card card-portfolio h-100" href="#!"
+                                        ><img class="card-img-top" src="https://source.unsplash.com/cuTcfqsES6o/700x500" alt="..." />
+                                        <div class="card-body"><div class="card-title">University of D</div></div></a
+                                    >
+                                </div>
+                                <div class="col-md-6 col-xl-4 mb-5">
+                                    <a class="card card-portfolio h-100" href="#!"
+                                        ><img class="card-img-top" src="https://source.unsplash.com/jipR1oTCO7U/700x500" alt="..." />
+                                        <div class="card-body"><div class="card-title">University of E</div></div></a
+                                    >
+                                </div>
+                                <div class="col-md-6 col-xl-4 mb-5">
+                                    <a class="card card-portfolio h-100" href="#!"
+                                        ><img class="card-img-top" src="https://source.unsplash.com/n3sqjJzZiBM/700x500" alt="..." />
+                                        <div class="card-body"><div class="card-title">University of F</div></div></a
+                                    >
+                                </div>
+                                <div class="col-md-6 col-xl-4 mb-5">
+                                    <a class="card card-portfolio h-100" href="#!"
+                                        ><img class="card-img-top" src="https://source.unsplash.com/Zr7MxECDTQ8/700x500" alt="..." />
+                                        <div class="card-body"><div class="card-title">University of G</div></div></a
+                                    >
+                                </div>
+                                <div class="col-md-6 col-xl-4 mb-5">
+                                    <a class="card card-portfolio h-100" href="#!"
+                                        ><img class="card-img-top" src="https://source.unsplash.com/QcyenJDqDzw/700x500" alt="..." />
+                                        <div class="card-body"><div class="card-title">University of H</div></div></a
+                                    >
+                                </div>
+                                <div class="col-md-6 col-xl-4 mb-5">
+                                    <a class="card card-portfolio h-100" href="#!"
+                                        ><img class="card-img-top" src="https://source.unsplash.com/TIutDBFEtcY/700x500" alt="..." />
+                                        <div class="card-body"><div class="card-title">University of I</div></div></a
+                                    >
                                 </div>
                             </div>
                         </div>
-                        <div class="text-center"><a class="btn btn-primary btn-marketing rounded-0" href="../case-studies.html">Back to Case Studies</a></div>
+                    </section>
+
+                    <section class="bg-white py-3">
+                        <div class="container">
+                            <div class="text-center pb-1">
+                                <div class="row justify-content-center">
+                                    <div class="col-lg-8">
+                                        <h1 class="page-header-title mb-3 text-black">Africa Clients</h1>
+                                        <p class="page-header-text mb-0 text-black">This a caption about Procept consulting partners</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row py-10">
+                                <div class="col-md-6 col-xl-4 mb-5 mt-n5">
+                                    <a class="card card-portfolio h-100" href="#!"
+                                        ><img class="card-img-top" src="https://source.unsplash.com/jWQj5Wjepuk/700x500" alt="..." />
+                                        <div class="card-body"><div class="card-title">University of A</div></div></a
+                                    >
+                                </div>
+                                <div class="col-md-6 col-xl-4 mb-5 mt-md-n5">
+                                    <a class="card card-portfolio h-100" href="#!"
+                                        ><img class="card-img-top" src="https://source.unsplash.com/Ecnx13MEPK0/700x500" alt="..." />
+                                        <div class="card-body"><div class="card-title">University of B</div></div></a
+                                    >
+                                </div>
+                                <div class="col-md-6 col-xl-4 mb-5 mt-xl-n5">
+                                    <a class="card card-portfolio h-100" href="#!"
+                                        ><img class="card-img-top" src="https://source.unsplash.com/eUCy1jb_B7I/700x500" alt="..." />
+                                        <div class="card-body"><div class="card-title">University of C</div></div></a
+                                    >
+                                </div>
+                                <div class="col-md-6 col-xl-4 mb-5">
+                                    <a class="card card-portfolio h-100" href="#!"
+                                        ><img class="card-img-top" src="https://source.unsplash.com/cuTcfqsES6o/700x500" alt="..." />
+                                        <div class="card-body"><div class="card-title">University of D</div></div></a
+                                    >
+                                </div>
+                                <div class="col-md-6 col-xl-4 mb-5">
+                                    <a class="card card-portfolio h-100" href="#!"
+                                        ><img class="card-img-top" src="https://source.unsplash.com/jipR1oTCO7U/700x500" alt="..." />
+                                        <div class="card-body"><div class="card-title">University of E</div></div></a
+                                    >
+                                </div>
+                                <div class="col-md-6 col-xl-4 mb-5">
+                                    <a class="card card-portfolio h-100" href="#!"
+                                        ><img class="card-img-top" src="https://source.unsplash.com/n3sqjJzZiBM/700x500" alt="..." />
+                                        <div class="card-body"><div class="card-title">University of F</div></div></a
+                                    >
+                                </div>
+                                <div class="col-md-6 col-xl-4 mb-5">
+                                    <a class="card card-portfolio h-100" href="#!"
+                                        ><img class="card-img-top" src="https://source.unsplash.com/Zr7MxECDTQ8/700x500" alt="..." />
+                                        <div class="card-body"><div class="card-title">University of G</div></div></a
+                                    >
+                                </div>
+                                <div class="col-md-6 col-xl-4 mb-5">
+                                    <a class="card card-portfolio h-100" href="#!"
+                                        ><img class="card-img-top" src="https://source.unsplash.com/QcyenJDqDzw/700x500" alt="..." />
+                                        <div class="card-body"><div class="card-title">University of H</div></div></a
+                                    >
+                                </div>
+                                <div class="col-md-6 col-xl-4 mb-5">
+                                    <a class="card card-portfolio h-100" href="#!"
+                                        ><img class="card-img-top" src="https://source.unsplash.com/TIutDBFEtcY/700x500" alt="..." />
+                                        <div class="card-body"><div class="card-title">University of I</div></div></a
+                                    >
+                                </div>
+                            </div>
+                        </div>
                     </section>
 
 
-                    <section class="bg-light py-10">
+
+                    <section class="bg-light py-5">
                         <div class="container">
                             <div class="row justify-content-center">
                                 <div class="col-lg-8 text-center">
@@ -311,10 +395,39 @@
         </div>
         <script src="https://code.jquery.com/jquery-3.4.1.min.js" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
-        <script src="../../js/scripts.js"></script>
-        <script src="../../js/overlay.js"></script>
+        <script src="../js/scripts.js"></script>
+        <script src="../js/overlay.js"></script>
         <script src="https://unpkg.com/kinet@2.2.1/dist/kinet.min.js"></script>
         <script>
+            // create instance of kinet with custom settings
+            var kinet = new Kinet({
+            acceleration: 0.06,
+            friction: 0.20,
+            names: ["x", "y"],
+            });
+
+            // select circle element
+            var circle = document.getElementById('circle');
+
+            // set handler on kinet tick event
+            kinet.on('tick', function(instances) {
+            circle.style.transform = `translate3d(${ (instances.x.current) }px, ${ (instances.y.current) }px, 0) rotateX(${ (instances.x.velocity/2) }deg) rotateY(${ (instances.y.velocity/2) }deg)`;
+            });
+
+            // call kinet animate method on mousemove
+            document.addEventListener('mousemove', function (event) {
+            kinet.animate('x', event.clientX - window.innerWidth/2);
+            kinet.animate('y', event.clientY - window.innerHeight/2);
+            });
+
+            // log
+            kinet.on('start', function() {
+            console.log('start');
+            });
+
+            kinet.on('end', function() {
+            console.log('end');
+            });
 
 
             window.onscroll = function() {myFunction()};

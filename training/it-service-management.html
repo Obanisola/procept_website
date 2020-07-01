@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Procept</title>
+        <link href="../css/styles.css" rel="stylesheet" />
+        <link href="../css/overlay.css" rel="stylesheet" />
+        <link rel="icon" type="image/x-icon" href="../assets/img/favicon.png" />
+        <script data-search-pseudo-elements defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.min.js" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.24.1/feather.min.js" crossorigin="anonymous"></script>
+
+        <style>
+            @media (min-width: 992px) {
+                .parent-service-navbar .service-navbar {
+                    padding-top: 0;
+                    padding-bottom: 0;
+                }
+            }
+
+            @media (max-width: 993px) {
+                #myHeader   {
+                    display: none;
+                }
+            }
+
+            .service-navbar {
+                font-size: 13px;
+            }
+
+            .parent-service-navbar .service-navbar .nav-link {
+                padding-right: 2rem;
+                padding-left: 2rem;
+                padding-top: 1rem;
+                padding-bottom: 1rem;
+            }
+
+            #active   {
+                color: #0061f2;
+            }
+
+            .content {
+                padding: 16px;
+            }
+
+            .sticky {
+                position: fixed;
+                top: 0;
+                width: 100%;
+                z-index: 2;
+            }
+
+            .sticky + .content {
+                padding-top: 102px;
+            }
+
+            .active {
+                color: #0061f2;
+            }
+
+            .circle {
+                display: none;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="circle" class="circle"></div>
+        <div id="layoutDefault">
+            <div id="layoutDefault_content">
+                <main>
+                    <nav class="navbar navbar-marketing navbar-expand-lg bg-white navbar-light no-cursor">
+                        <div class="container-fluid" style="padding-left: 1rem; padding-right: 1rem;">
+                            <a class="navbar-brand text-dark" href="../index.html">Procept</a><button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><i data-feather="menu"></i></button>
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav mr-auto ml-lg-auto">
+                                    <li class="nav-item"><a class="nav-link" id="active" href="services.html">Consulting </a></li>
+                                    <li class="nav-item"><a class="nav-link" href="#">Training </a></li>
+                                    <li class="nav-item"><a class="nav-link" href="index.html">Software Solutions </a></li>
+                                    <hr class="sec-nav-item">
+                                    <li class="nav-item sec-nav-item"><a class="nav-link" href="index.html">About Procept (Nigeria) </a></li>
+                                    <li class="nav-item sec-nav-item"><a class="nav-link" href="index.html">Case Studies </a></li>
+                                    <li class="nav-item sec-nav-item"><a class="nav-link" href="index.html">Partners </a></li>
+                                    <li class="nav-item sec-nav-item"><a class="nav-link" href="index.html">Clients </a></li>
+                                    <li class="nav-item sec-nav-item"><a class="nav-link" href="index.html">Blog </a></li>
+                                    <li class="nav-item sec-nav-item"><a class="nav-link" href="index.html">Career </a></li>
+                                    <li class="nav-item sec-nav-item"><a class="nav-link" href="index.html">Contact </a></li>
+                                </ul>
+
+                                <!-- The overlay -->
+                                <div id="myNav" class="overlay-menu">
+                                    <!-- Button to close the overlay navigation -->
+                                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" style="color: #fff;">&times;</a>
+                                    <!-- Overlay content -->
+                                    <div class="overlay-content">
+                                        <ul>
+                                            <li><a href="#">About Procept (Nigeria)</a></li>
+                                            <li><a href="#">Case Studies</a></li>
+                                            <li><a href="#">Partners</a></li>
+                                            <li><a href="#">Clients</a></li>
+                                            <li><a href="#">Blog</a></li>
+                                            <li><a href="#">Career</a></li>
+                                            <li><a href="#">Contact Us</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                  
+                                <a class=" btn px-4 ml-lg-4" id="menuBox" onclick="openNav()">
+                                    <span>Menu</span>
+                                    <span><i class="fas fa-bars ml-1"></i></span>
+                                </a>
+                            </div>
+                        </div>
+                    </nav>                    
+                    
+                    <nav id="myHeader" class="navbar parent-service-navbar navbar-marketing navbar-expand-lg bg-black navbar-light no-cursor" style="max-height: 50px; bottom: 0;">
+                        <div class="container" style="padding-left: 1rem; padding-right: 1rem;">
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav mr-auto ml-lg-auto service-navbar">
+                                    <li class="nav-item"><a class="nav-link font-weight-bold text-primary" href="services.html">Services</a></li>
+                                    <li class="nav-item"><a class="nav-link font-weight-bold text-white" href="case-studies.html">Case Studies</a></li>
+                                    <li class="nav-item"><a class="nav-link font-weight-bold text-white" href="partners.html">Partners</a></li>
+                                    <li class="nav-item"><a class="nav-link font-weight-bold text-white" href="clients.html">Clients</a></li>
+                                    <li class="nav-item"><a class="nav-link font-weight-bold text-white" href="contact.html">Contact</a></li>
+                                </ul>
+
+                            </div>
+                        </div>
+                    </nav>
+
+
+                    <section class="bg-light py-10">
+                        <div class="container">
+                            <div class="d-flex align-items-center mb-5">
+                                <div class="icon-stack icon-stack-lg bg-black text-white"><i class="fas fa-sitemap"></i></i></div>
+                                <div class="ml-3">
+                                    <h2 class="mb-0">IT Service Management Consulting</h2>
+                                    <p class="lead mb-0">This is a short caption.</p>
+                                </div>
+                            </div>
+                            <hr>
+                            <p class="lead">IT Service Management (ITSM) is a discipline for managing information technology (IT) systems from the customer's perspective of IT's contribution to the business. in the simplest terms, ITSM is the management of IT services to meet customer requirements. The three objectives of ITSM are:</p>
+                            <ul>
+                                <li>Integrating services with the current and future needs of the business and its customers.</li>
+                                <li>Improving the quality of the services delivered.</li>
+                                <li>Reducing the long-term cost of service provision.</li>
+                            </ul>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui quisquam animi temporibus ipsum iusto necessitatibus laudantium beatae. Eligendi dolorum laudantium numquam? Officiis nemo error animi aliquam dolor consequatur ducimus unde.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui repellat magni eaque beatae explicabo fugit placeat earum, dolores quaerat aperiam vero adipisci quidem minus officiis blanditiis unde? Incidunt, ea ad.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis sed illum soluta, quaerat et deleniti magnam laudantium, non omnis numquam quos placeat. Porro autem consectetur dolor minima voluptatum modi maiores.</p>
+                            <br>
+                            <div class="accordion accordion-faq mb-5" id="authAccordion">
+                                <div class="card border-bottom">
+                                    <div class="card-body bg-black">
+                                        <div class="accordion-faq-title">
+                                            <div class="mr-2">
+                                                <h4 class="mb-0 text-white">Concept and Processes</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card accordion-faq-item">
+                                    <a class="card-header" id="authHeadingOne" data-toggle="collapse" data-target="#authCollapseOne" aria-expanded="true" aria-controls="authCollapseOne" href="javascript:void(0);"
+                                        ><div class="accordion-faq-item-heading">Project Governance Frameworks<i class="accordion-faq-item-heading-arrow" data-feather="chevron-down"></i></div
+                                    ></a>
+                                    <div class="collapse show" id="authCollapseOne" aria-labelledby="authHeadingOne" data-parent="#authAccordion"><div class="card-body border-bottom">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</div></div>
+                                </div>
+                                <div class="card accordion-faq-item">
+                                    <a class="card-header collapsed" id="authHeadingTwo" data-toggle="collapse" data-target="#authCollapseTwo" aria-expanded="true" aria-controls="authCollapseTwo" href="javascript:void(0);"
+                                        ><div class="accordion-faq-item-heading">IT Audit<i class="accordion-faq-item-heading-arrow" data-feather="chevron-down"></i></div
+                                    ></a>
+                                    <div class="collapse" id="authCollapseTwo" aria-labelledby="authHeadingTwo" data-parent="#authAccordion"><div class="card-body border-bottom">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</div></div>
+                                </div>
+                                <div class="card accordion-faq-item">
+                                    <a class="card-header collapsed" id="authHeadingThree" data-toggle="collapse" data-target="#authCollapseThree" aria-expanded="true" aria-controls="authCollapseThree" href="javascript:void(0);"
+                                        ><div class="accordion-faq-item-heading">IT Organization Design<i class="accordion-faq-item-heading-arrow" data-feather="chevron-down"></i></div
+                                    ></a>
+                                    <div class="collapse" id="authCollapseThree" aria-labelledby="authHeadingThree" data-parent="#authAccordion"><div class="card-body border-bottom">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</div></div>
+                                </div>
+                                <div class="card accordion-faq-item">
+                                    <a class="card-header collapsed" id="authHeadingFour" data-toggle="collapse" data-target="#authCollapseFour" aria-expanded="true" aria-controls="authCollapseFour" href="javascript:void(0);"
+                                        ><div class="accordion-faq-item-heading">ITSM Audit<i class="accordion-faq-item-heading-arrow" data-feather="chevron-down"></i></div
+                                    ></a>
+                                    <div class="collapse" id="authCollapseFour" aria-labelledby="authHeadingFour" data-parent="#authAccordion"><div class="card-body border-bottom">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</div></div>
+                                </div>
+                                <div class="card accordion-faq-item">
+                                    <a class="card-header collapsed" id="authHeadingFive" data-toggle="collapse" data-target="#authCollapseFive" aria-expanded="true" aria-controls="authCollapseFive" href="javascript:void(0);"
+                                        ><div class="accordion-faq-item-heading">ITSM Practice Design<i class="accordion-faq-item-heading-arrow" data-feather="chevron-down"></i></div
+                                    ></a>
+                                    <div class="collapse" id="authCollapseFive" aria-labelledby="authHeadingFive" data-parent="#authAccordion"><div class="card-body border-bottom">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</div></div>
+                                </div>
+                                <div class="card accordion-faq-item">
+                                    <a class="card-header collapsed" id="authHeadingSix" data-toggle="collapse" data-target="#authCollapseSix" aria-expanded="true" aria-controls="authCollapseSix" href="javascript:void(0);"
+                                        ><div class="accordion-faq-item-heading">Establish a Service Management Practice<i class="accordion-faq-item-heading-arrow" data-feather="chevron-down"></i></div
+                                    ></a>
+                                    <div class="collapse" id="authCollapseSix" aria-labelledby="authHeadingSix" data-parent="#authAccordion"><div class="card-body border-bottom">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</div></div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="bg-white py-3">
+                        <div class="container">
+                            <div class="text-center pb-1">
+                                <div class="row justify-content-center">
+                                    <div class="col-lg-8">
+                                        <h1 class="page-header-title mb-3 text-black">Consulting Clients</h1>
+                                        <p class="page-header-text mb-0 text-black">This a caption about Procept  Clients</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row py-10">
+                                <div class="col-md-6 col-xl-4 mb-5 mt-n5">
+                                    <a class="card card-portfolio h-100" href="#!"
+                                        ><img class="card-img-top" src="https://source.unsplash.com/jWQj5Wjepuk/700x500" alt="..." />
+                                        <div class="card-body"><div class="card-title">University of A</div></div></a
+                                    >
+                                </div>
+                                <div class="col-md-6 col-xl-4 mb-5 mt-md-n5">
+                                    <a class="card card-portfolio h-100" href="#!"
+                                        ><img class="card-img-top" src="https://source.unsplash.com/Ecnx13MEPK0/700x500" alt="..." />
+                                        <div class="card-body"><div class="card-title">University of B</div></div></a
+                                    >
+                                </div>
+                                <div class="col-md-6 col-xl-4 mb-5 mt-xl-n5">
+                                    <a class="card card-portfolio h-100" href="#!"
+                                        ><img class="card-img-top" src="https://source.unsplash.com/eUCy1jb_B7I/700x500" alt="..." />
+                                        <div class="card-body"><div class="card-title">University of C</div></div></a
+                                    >
+                                </div>
+                                <div class="col-md-6 col-xl-4 mb-5">
+                                    <a class="card card-portfolio h-100" href="#!"
+                                        ><img class="card-img-top" src="https://source.unsplash.com/cuTcfqsES6o/700x500" alt="..." />
+                                        <div class="card-body"><div class="card-title">University of D</div></div></a
+                                    >
+                                </div>
+                                <div class="col-md-6 col-xl-4 mb-5">
+                                    <a class="card card-portfolio h-100" href="#!"
+                                        ><img class="card-img-top" src="https://source.unsplash.com/jipR1oTCO7U/700x500" alt="..." />
+                                        <div class="card-body"><div class="card-title">University of E</div></div></a
+                                    >
+                                </div>
+                                <div class="col-md-6 col-xl-4 mb-5">
+                                    <a class="card card-portfolio h-100" href="#!"
+                                        ><img class="card-img-top" src="https://source.unsplash.com/n3sqjJzZiBM/700x500" alt="..." />
+                                        <div class="card-body"><div class="card-title">University of F</div></div></a
+                                    >
+                                </div>
+                                <div class="col-md-6 col-xl-4 mb-2">
+                                    <a class="card card-portfolio h-100" href="#!"
+                                        ><img class="card-img-top" src="https://source.unsplash.com/Zr7MxECDTQ8/700x500" alt="..." />
+                                        <div class="card-body"><div class="card-title">University of G</div></div></a
+                                    >
+                                </div>
+                                <div class="col-md-6 col-xl-4 mb-2">
+                                    <a class="card card-portfolio h-100" href="#!"
+                                        ><img class="card-img-top" src="https://source.unsplash.com/QcyenJDqDzw/700x500" alt="..." />
+                                        <div class="card-body"><div class="card-title">University of H</div></div></a
+                                    >
+                                </div>
+                                <div class="col-md-6 col-xl-4 mb-2">
+                                    <a class="card card-portfolio h-100" href="#!"
+                                        ><img class="card-img-top" src="https://source.unsplash.com/TIutDBFEtcY/700x500" alt="..." />
+                                        <div class="card-body"><div class="card-title">University of I</div></div></a
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-center"><a class="btn btn-primary btn-marketing rounded-0" href="services.html">Back to Services</a></div>
+                    </section>
+
+
+
+                    <section class="bg-light py-10">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8 text-center">
+                                    <h2>Contact us</h2>
+                                    <p class="mb-5">This is a short caption for contact us</p>
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <div class="icon-stack icon-stack-lg bg-black text-white mb-3"><i class="fa fa-envelope"></i></div>
+                                                    <div class="small"><a href="#!">hello@example.com</a></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <div class="icon-stack icon-stack-lg bg-black text-white mb-3"><i class="fa fa-mobile"></i></div>
+                                                    <div class="small">555-123-4567</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+
+                </main>
+            </div>
+
+            <div id="layoutDefault_footer">
+                <footer class="footer pt-10 pb-5 mt-auto bg-black footer-dark">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-3">
+                                <div class="footer-brand">Procept</div>
+                                <div class="mb-3">Precision meets Expertise</div>
+                                <div class="icon-list-social mb-5">
+                                    <a class="icon-list-social-link" href="javascript:void(0);"><i class="fab fa-medium"></i></a><a class="icon-list-social-link" href="javascript:void(0);"><i class="fab fa-linkedin"></i></a><a class="icon-list-social-link" href="javascript:void(0);"><i class="fab fa-twitter"></i></a>
+                                </div>
+                            </div>
+                            <div class="col-lg-9">
+                                <div class="row">
+                                    <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+                                        <div class="text-uppercase-expanded text-xs mb-4">About</div>
+                                        <ul class="list-unstyled mb-0">
+                                            <li class="mb-2"><a href="javascript:void(0);">Company History</a></li>
+                                            <li class="mb-2"><a href="javascript:void(0);">Management Team</a></li>
+                                            <li class="mb-2"><a href="javascript:void(0);">Our Consultants</a></li>
+                                            <li class="mb-2"><a href="javascript:void(0);">Partners</a></li>
+                                            <li><a href="javascript:void(0);">Events</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+                                        <div class="text-uppercase-expanded text-xs mb-4">Services</div>
+                                        <ul class="list-unstyled mb-0">
+                                            <li class="mb-2"><a href="javascript:void(0);">Consultancy</a></li>
+                                            <li class="mb-2"><a href="javascript:void(0);">Training</a></li>
+                                            <li class="mb-2"><a href="javascript:void(0);">Software Solutions</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6 mb-5 mb-md-0">
+                                        <div class="text-uppercase-expanded text-xs mb-4">Useful Links</div>
+                                        <ul class="list-unstyled mb-0">
+                                            <li class="mb-2"><a href="javascript:void(0);">Procept Canada</a></li>
+                                            <li class="mb-2"><a href="javascript:void(0);">TidalShift Homepage</a></li>
+                                            <li class="mb-2"><a href="javascript:void(0);">eLearning Portal</a></li>
+                                            <li class="mb-2"><a href="javascript:void(0);">PMI Nigeria</a></li>
+                                            <li class="mb-2"><a href="javascript:void(0);">Project Management Institute (PMI)</a></li>
+                                            <li class="mb-2"><a href="javascript:void(0);">International Project Management Association (IPMA)</a></li>
+                                            <li><a href="javascript:void(0);">Project Management Association of Canada (PMAC)</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6">
+                                        <div class="text-uppercase-expanded text-xs mb-4">Legal</div>
+                                        <ul class="list-unstyled mb-0">
+                                            <li class="mb-2"><a href="javascript:void(0);">Privacy Policy</a></li>
+                                            <li class="mb-2"><a href="javascript:void(0);">Terms and Conditions</a></li>
+                                            <li><a href="javascript:void(0);">Accreditations</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="my-5" />
+                        <div class="row align-items-center">
+                            <div class="col-md small">Procept® and the Procept logo are registered marks of Procept Associates Ltd.
+                                IIBA®, CCBA® and CBA®P are registered marks of the International Institute for Business Analysis.
+                                ITIL® is a registered trade mark of AXELOS Limited. The ITIL Accredited Training Organization logo is a trade mark of AXELOS Limited.
+                                PMAC™, PMAC-AGPC™, Cert.APM™ and Cert.EPC™ are trademarks of the Project Management Association of Canada.
+                                PMI®, CAPM®, PMP®, PgMP®, PfMP®, PMI-SP®, PMI-RMP®, PMI-ACP®, PMI-PBA®, and PMBOK® are registered marks and PMI Talent Triangle™ is a trademark of the Project Management Institute.
+                                CSM®, CSP®, CST®, CSPO®, and CSD® are registered marks of the Scrum Alliance.
+                            </div>
+                        </div>
+                        <hr class="my-5" />
+                        <div class="row align-items-center">
+                            <div class="col-md-6 small">Copyright &copy; Procept 2020</div>
+                            <div class="col-md-6 text-md-right small">
+                                <a href="javascript:void(0);">Privacy Policy</a>
+                                &middot;
+                                <a href="javascript:void(0);">Terms &amp; Conditions</a>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+
+        </div>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+        <script src="../js/scripts.js"></script>
+        <script src="../js/overlay.js"></script>
+        <script src="https://unpkg.com/kinet@2.2.1/dist/kinet.min.js"></script>
+        <script>
+
+
+            window.onscroll = function() {myFunction()};
+
+            var header = document.getElementById("myHeader");
+            var sticky = header.offsetTop;
+
+            function myFunction() {
+                if (window.pageYOffset > sticky) {
+                    header.classList.add("sticky");
+                } else {
+                    header.classList.remove("sticky");
+                }
+            }
+
+            //Scroll Script
+            $(document).ready(function() {
+            $(document).on("scroll", onScroll);
+
+            function onScroll(event){
+                var scrollPos = $(document).scrollTop();
+                $('a').each(function () {
+                    var currLink = $(this);
+                    var refElement = $(currLink.attr("href"));
+                    if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
+                        $('a').removeClass("active");
+                        currLink.addClass("active");
+                    }
+                    else{
+                        currLink.removeClass("active");
+                    }
+                    });
+                }
+            })
+
+        </script>
+    </body>
+</html>
