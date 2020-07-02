@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Procept</title>
+        <link href="../css/styles.css" rel="stylesheet" />
+        <link href="../css/overlay.css" rel="stylesheet" />
+        <link href="../css/table.css" rel="stylesheet" />
+        <link rel="icon" type="image/x-icon" href="../assets/img/favicon.png" />
+        <script data-search-pseudo-elements defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.min.js" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.24.1/feather.min.js" crossorigin="anonymous"></script>
+
+        <style>
+            @media (min-width: 992px) {
+                .parent-service-navbar .service-navbar {
+                    padding-top: 0;
+                    padding-bottom: 0;
+                }
+            }
+
+            @media (max-width: 993px) {
+                #myHeader   {
+                    display: none;
+                }
+            }
+
+            .service-navbar {
+                font-size: 13px;
+            }
+
+            .parent-service-navbar .service-navbar .nav-link {
+                padding-right: 2rem;
+                padding-left: 2rem;
+                padding-top: 1rem;
+                padding-bottom: 1rem;
+            }
+
+            #active   {
+                color: #0061f2;
+            }
+
+            .content {
+                padding: 16px;
+            }
+
+            .sticky {
+                position: fixed;
+                top: 0;
+                width: 100%;
+                z-index: 2;
+            }
+
+            .sticky + .content {
+                padding-top: 102px;
+            }
+
+            .active {
+                color: #0061f2;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="circle" class="circle"></div>
+        <div id="layoutDefault">
+            <div id="layoutDefault_content">
+                <main>
+                    <nav class="navbar navbar-marketing navbar-expand-lg bg-white navbar-light no-cursor">
+                        <div class="container-fluid" style="padding-left: 1rem; padding-right: 1rem;">
+                            <a class="navbar-brand text-dark" href="../index.html">Procept</a><button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><i data-feather="menu"></i></button>
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav mr-auto ml-lg-auto">
+                                    <li class="nav-item"><a class="nav-link" href="../consulting/">Consulting </a></li>
+                                    <li class="nav-item"><a class="nav-link" id="active" href="services.html">Training </a></li>
+                                    <li class="nav-item"><a class="nav-link" href="../software-solutions/services.html">Software Solutions </a></li>
+                                    <hr class="sec-nav-item">
+                                    <li class="nav-item sec-nav-item"><a class="nav-link" href="index.html">About Procept (Nigeria) </a></li>
+                                    <li class="nav-item sec-nav-item"><a class="nav-link" href="index.html">Case Studies </a></li>
+                                    <li class="nav-item sec-nav-item"><a class="nav-link" href="index.html">Partners </a></li>
+                                    <li class="nav-item sec-nav-item"><a class="nav-link" href="index.html">Clients </a></li>
+                                    <li class="nav-item sec-nav-item"><a class="nav-link" href="index.html">Blog </a></li>
+                                    <li class="nav-item sec-nav-item"><a class="nav-link" href="index.html">Career </a></li>
+                                    <li class="nav-item sec-nav-item"><a class="nav-link" href="index.html">Contact </a></li>
+                                </ul>
+
+                                <!-- The overlay -->
+                                <div id="myNav" class="overlay-menu">
+                                    <!-- Button to close the overlay navigation -->
+                                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" style="color: #fff;">&times;</a>
+                                    <!-- Overlay content -->
+                                    <div class="overlay-content">
+                                        <ul>
+                                            <li><a href="#">About Procept (Nigeria)</a></li>
+                                            <li><a href="#">Case Studies</a></li>
+                                            <li><a href="#">Partners</a></li>
+                                            <li><a href="#">Clients</a></li>
+                                            <li><a href="#">Blog</a></li>
+                                            <li><a href="#">Career</a></li>
+                                            <li><a href="#">Contact Us</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                  
+                                <a class=" btn px-4 ml-lg-4" id="menuBox" onclick="openNav()">
+                                    <span>Menu</span>
+                                    <span><i class="fas fa-bars ml-1"></i></span>
+                                </a>
+                            </div>
+                        </div>
+                    </nav>                    
+                    
+                    <nav id="myHeader" class="navbar parent-service-navbar navbar-marketing navbar-expand-lg bg-black navbar-light no-cursor" style="max-height: 50px; bottom: 0;">
+                        <div class="container" style="padding-left: 1rem; padding-right: 1rem;">
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav mr-auto ml-lg-auto service-navbar">
+                                    <li class="nav-item"><a class="nav-link font-weight-bold text-white" href="services.html">Services</a></li>
+                                    <li class="nav-item dropdown no-caret">
+                                        <a class="nav-link dropdown-toggle text-primary font-weight-bold" id="navbarDropdownDocs" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Courses<i class="fas fa-chevron-right dropdown-arrow"></i></a>
+                                        <div class="dropdown-menu dropdown-menu-right animated--fade-in-up rounded-0" aria-labelledby="navbarDropdownDocs">
+                                            <a class="dropdown-item py-3" href="courses.html" target="_blank">
+                                                <div class="bg-primary-soft text-primary mr-4"></div>
+                                                <div>
+                                                    <div class="small text-gray-500">Overview</div>
+                                                    Very short caption
+                                                </div></a
+                                            >
+                                            <div class="dropdown-divider m-0"></div>
+                                            <a class="dropdown-item py-3" href="project-management-courses.html"
+                                                ><div class="bg-primary-soft text-primary mr-4"></div>
+                                                <div>
+                                                    <div class="small text-gray-500">Project Management Courses</div>
+                                                    Very short caption
+                                                </div></a
+                                            >
+                                            <div class="dropdown-divider m-0"></div>
+                                            <a class="dropdown-item py-3" href="business-analysis-courses.html"
+                                                ><div class="bg-primary-soft text-primary mr-4"></div>
+                                                <div>
+                                                    <div class="small text-gray-500">Business Analysis Courses</div>
+                                                    Very short caption
+                                                </div></a
+                                            >
+                                            <div class="dropdown-divider m-0"></div>
+                                            <a class="dropdown-item py-3" href="management-courses.html"
+                                                ><div class="bg-primary-soft text-primary mr-4"></div>
+                                                <div>
+                                                    <div class="small text-gray-500">Management Courses</div>
+                                                    Very short caption
+                                                </div></a
+                                            >
+                                            <div class="dropdown-divider m-0"></div>
+                                            <a class="dropdown-item py-3" href="leadership-courses.html"
+                                                ><div class="bg-primary-soft text-primary mr-4"></div>
+                                                <div>
+                                                    <div class="small text-primary-500">Leadership Courses</div>
+                                                    Very short caption
+                                                </div></a
+                                            >
+                                        </div>
+                                    </li>
+
+                                    <li class="nav-item"><a class="nav-link font-weight-bold text-white" href="certificates.html">Certificates</a></li>
+                                    <li class="nav-item"><a class="nav-link font-weight-bold text-white" href="calendar.html">Calendar</a></li>
+                                    <li class="nav-item"><a class="nav-link font-weight-bold text-white" href="resources.html">Resources</a></li>
+                                    <li class="nav-item"><a class="nav-link font-weight-bold text-white" href="contact.html">Contact</a></li>
+                                </ul>
+
+                            </div>
+                        </div>
+                    </nav>
+
+
+                    <header class="page-header page-header-dark bg-primary min-vh-100">
+                        <div class="page-header-content">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg">
+                                        <h1 class="page-header-title mb-3">Leasdership Courses</h1>
+                                        <p class="mb-0">Earn credits with our courses.</p>
+                                        <br>
+                                        <a class="btn partner-btn btn-outline-dark btn-marketing rounded-0 " href="#!">Learn more</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </header>
+                    
+                    <section class="bg-white py-10">
+                        <div class="container text-black">
+                            <h1>Overview</h1>
+                            <p class="lead" style="text-align: justify;">Procept has a long and rich history delivering professional training in Canada and around the world. Procept delivered the first Project Management Professional (PMP) preparation class in Canada, created the first formal project management course delivered through a continuing education division at a Canadian university at the Professional Development Centre of University of Toronto's Faculty of Engineering and Applied Science, and delivered the first course on agile project management offered through a Canadian university.
+                            </p>
+
+                            <p class="lead" style="text-align: justify;">Today, Procept maintains its relationships with higher education, offering classes through one US and seven Canadian universities plus a number of colleges. Procept instructors teach graduate classes in project management in the MBA or M.Eng. programs at several universities as well as post-graduate professional development classes. In addition, Procept is a key partner for many major corporations, delivering customized in-house training to their staff. The client list for this type of training includes many of the largest corporations in the world, plus all levels of government and many non-profit organizations.   
+                            </p>
+
+                            <p class="lead text-danger" style="text-align: justify;">COPY CONTENT FROM PROCEPT CANADA WEBSITE (Training/Courses/PM)</p>
+                        </div>
+                    </section>
+
+                    <section class="bg-black pt-10 pb-5">
+                        <div class="container">
+                            <div class="text-center pb-5">
+                                <div class="row justify-content-center">
+                                    <div class="col-lg-8">
+                                        <h1 class="page-header-title mb-3 text-white">Beginners Courses</h1>
+                                        <p class="page-header-text mb-0 text-white">This a caption about PM</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <table class="table-container">
+                                <thead>
+                                    <tr class="bg-gray-400">
+                                        <th><h1 class="table-h1 text-primary">Course ID</h1></th>
+                                        <th><h1 class="table-h1 text-primary">Title</h1></th>
+                                        <th><h1 class="table-h1 text-primary">Duration</h1></th>
+                                        <th><h1 class="table-h1 text-primary">Venue</h1></th>
+                                        <th><h1 class="table-h1 text-primary"></h1></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <a>
+                                    <tr>
+                                        <td>PM00001</td>
+                                        <td>Sample course title</td>
+                                        <td>7 days</td>
+                                        <td>Online | Canada | Lagos</td>
+                                        <td class="td-link"><a target="_blank" href="courses/sample-course-page.html">Learn more</a></td>
+                                    </tr>
+                                    </a>
+                                    <tr>
+                                        <td>PM00001</td>
+                                        <td>Sample course title</td>
+                                        <td>7 days</td>
+                                        <td>Online | Canada | Lagos</td>
+                                        <td class="td-link"><a href="#">Learn more</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>PM00001</td>
+                                        <td>Sample course title</td>
+                                        <td>7 days</td>
+                                        <td>Online | Canada | Lagos</td>
+                                        <td class="td-link"><a href="#">Learn more</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>PM00001</td>
+                                        <td>Sample course title</td>
+                                        <td>7 days</td>
+                                        <td>Online | Canada | Lagos</td>
+                                        <td class="td-link"><a href="#">Learn more</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>PM00001</td>
+                                        <td>Sample course title</td>
+                                        <td>7 days</td>
+                                        <td>Online | Canada | Lagos</td>
+                                        <td class="td-link"><a href="#">Learn more</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>PM00001</td>
+                                        <td>Sample course title</td>
+                                        <td>7 days</td>
+                                        <td>Online | Canada | Lagos</td>
+                                        <td class="td-link"><a href="#">Learn more</a></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </section>
+
+                    <section class="bg-white pt-10 pb-5">
+                        <div class="container">
+                            <div class="text-center pb-5">
+                                <div class="row justify-content-center">
+                                    <div class="col-lg-8">
+                                        <h1 class="page-header-title mb-3 text-back">Intermediate Courses</h1>
+                                        <p class="page-header-text mb-0 text-black">This a caption about PM</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <table class="table-container">
+                                <thead>
+                                    <tr class="bg-gray-400">
+                                        <th><h1 class="table-h1 text-primary">Course ID</h1></th>
+                                        <th><h1 class="table-h1 text-primary">Title</h1></th>
+                                        <th><h1 class="table-h1 text-primary">Duration</h1></th>
+                                        <th><h1 class="table-h1 text-primary">Venue</h1></th>
+                                        <th><h1 class="table-h1 text-primary"></h1></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <a>
+                                    <tr>
+                                        <td>PM00001</td>
+                                        <td>Sample course title</td>
+                                        <td>7 days</td>
+                                        <td>Online | Canada | Lagos</td>
+                                        <td class="td-link"><a href="#">Learn more</a></td>
+                                    </tr>
+                                    </a>
+                                    <tr>
+                                        <td>PM00001</td>
+                                        <td>Sample course title</td>
+                                        <td>7 days</td>
+                                        <td>Online | Canada | Lagos</td>
+                                        <td class="td-link"><a href="#">Learn more</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>PM00001</td>
+                                        <td>Sample course title</td>
+                                        <td>7 days</td>
+                                        <td>Online | Canada | Lagos</td>
+                                        <td class="td-link"><a href="#">Learn more</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>PM00001</td>
+                                        <td>Sample course title</td>
+                                        <td>7 days</td>
+                                        <td>Online | Canada | Lagos</td>
+                                        <td class="td-link"><a href="#">Learn more</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>PM00001</td>
+                                        <td>Sample course title</td>
+                                        <td>7 days</td>
+                                        <td>Online | Canada | Lagos</td>
+                                        <td class="td-link"><a href="#">Learn more</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>PM00001</td>
+                                        <td>Sample course title</td>
+                                        <td>7 days</td>
+                                        <td>Online | Canada | Lagos</td>
+                                        <td class="td-link"><a href="#">Learn more</a></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </section>
+
+                    <section class="bg-black pt-10 pb-5">
+                        <div class="container">
+                            <div class="text-center pb-5">
+                                <div class="row justify-content-center">
+                                    <div class="col-lg-8">
+                                        <h1 class="page-header-title mb-3 text-white">Advance Courses</h1>
+                                        <p class="page-header-text mb-0 text-white">This a caption about PM</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <table class="table-container">
+                                <thead>
+                                    <tr class="bg-gray-400">
+                                        <th><h1 class="table-h1 text-primary">Course ID</h1></th>
+                                        <th><h1 class="table-h1 text-primary">Title</h1></th>
+                                        <th><h1 class="table-h1 text-primary">Duration</h1></th>
+                                        <th><h1 class="table-h1 text-primary">Venue</h1></th>
+                                        <th><h1 class="table-h1 text-primary"></h1></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <a>
+                                    <tr>
+                                        <td>PM00001</td>
+                                        <td>Sample course title</td>
+                                        <td>7 days</td>
+                                        <td>Online | Canada | Lagos</td>
+                                        <td class="td-link"><a href="#">Learn more</a></td>
+                                    </tr>
+                                    </a>
+                                    <tr>
+                                        <td>PM00001</td>
+                                        <td>Sample course title</td>
+                                        <td>7 days</td>
+                                        <td>Online | Canada | Lagos</td>
+                                        <td class="td-link"><a href="#">Learn more</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>PM00001</td>
+                                        <td>Sample course title</td>
+                                        <td>7 days</td>
+                                        <td>Online | Canada | Lagos</td>
+                                        <td class="td-link"><a href="#">Learn more</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>PM00001</td>
+                                        <td>Sample course title</td>
+                                        <td>7 days</td>
+                                        <td>Online | Canada | Lagos</td>
+                                        <td class="td-link"><a href="#">Learn more</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>PM00001</td>
+                                        <td>Sample course title</td>
+                                        <td>7 days</td>
+                                        <td>Online | Canada | Lagos</td>
+                                        <td class="td-link"><a href="#">Learn more</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>PM00001</td>
+                                        <td>Sample course title</td>
+                                        <td>7 days</td>
+                                        <td>Online | Canada | Lagos</td>
+                                        <td class="td-link"><a href="#">Learn more</a></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </section>
+
+                    <section class="bg-light py-10">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8 text-center">
+                                    <h2>Contact us</h2>
+                                    <p class="mb-5">This is a short caption for contact us</p>
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <div class="icon-stack icon-stack-lg bg-black text-white mb-3"><i class="fa fa-envelope"></i></div>
+                                                    <div class="small"><a href="#!">hello@example.com</a></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <div class="icon-stack icon-stack-lg bg-black text-white mb-3"><i class="fa fa-mobile"></i></div>
+                                                    <div class="small">555-123-4567</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </main>
+            </div>
+
+            <div id="layoutDefault_footer">
+                <footer class="footer pt-10 pb-5 mt-auto bg-black footer-dark">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-3">
+                                <div class="footer-brand">Procept</div>
+                                <div class="mb-3">Precision meets Expertise</div>
+                                <div class="icon-list-social mb-5">
+                                    <a class="icon-list-social-link" href="javascript:void(0);"><i class="fab fa-medium"></i></a><a class="icon-list-social-link" href="javascript:void(0);"><i class="fab fa-linkedin"></i></a><a class="icon-list-social-link" href="javascript:void(0);"><i class="fab fa-twitter"></i></a>
+                                </div>
+                            </div>
+                            <div class="col-lg-9">
+                                <div class="row">
+                                    <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+                                        <div class="text-uppercase-expanded text-xs mb-4">About</div>
+                                        <ul class="list-unstyled mb-0">
+                                            <li class="mb-2"><a href="javascript:void(0);">Company History</a></li>
+                                            <li class="mb-2"><a href="javascript:void(0);">Management Team</a></li>
+                                            <li class="mb-2"><a href="javascript:void(0);">Our Consultants</a></li>
+                                            <li class="mb-2"><a href="javascript:void(0);">Partners</a></li>
+                                            <li><a href="javascript:void(0);">Events</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+                                        <div class="text-uppercase-expanded text-xs mb-4">Services</div>
+                                        <ul class="list-unstyled mb-0">
+                                            <li class="mb-2"><a href="javascript:void(0);">Consultancy</a></li>
+                                            <li class="mb-2"><a href="javascript:void(0);">Training</a></li>
+                                            <li class="mb-2"><a href="javascript:void(0);">Software Solutions</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6 mb-5 mb-md-0">
+                                        <div class="text-uppercase-expanded text-xs mb-4">Useful Links</div>
+                                        <ul class="list-unstyled mb-0">
+                                            <li class="mb-2"><a href="javascript:void(0);">Procept Canada</a></li>
+                                            <li class="mb-2"><a href="javascript:void(0);">TidalShift Homepage</a></li>
+                                            <li class="mb-2"><a href="javascript:void(0);">eLearning Portal</a></li>
+                                            <li class="mb-2"><a href="javascript:void(0);">PMI Nigeria</a></li>
+                                            <li class="mb-2"><a href="javascript:void(0);">Project Management Institute (PMI)</a></li>
+                                            <li class="mb-2"><a href="javascript:void(0);">International Project Management Association (IPMA)</a></li>
+                                            <li><a href="javascript:void(0);">Project Management Association of Canada (PMAC)</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6">
+                                        <div class="text-uppercase-expanded text-xs mb-4">Legal</div>
+                                        <ul class="list-unstyled mb-0">
+                                            <li class="mb-2"><a href="javascript:void(0);">Privacy Policy</a></li>
+                                            <li class="mb-2"><a href="javascript:void(0);">Terms and Conditions</a></li>
+                                            <li><a href="javascript:void(0);">Accreditations</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="my-5" />
+                        <div class="row align-items-center">
+                            <div class="col-md small">Procept® and the Procept logo are registered marks of Procept Associates Ltd.
+                                IIBA®, CCBA® and CBA®P are registered marks of the International Institute for Business Analysis.
+                                ITIL® is a registered trade mark of AXELOS Limited. The ITIL Accredited Training Organization logo is a trade mark of AXELOS Limited.
+                                PMAC™, PMAC-AGPC™, Cert.APM™ and Cert.EPC™ are trademarks of the Project Management Association of Canada.
+                                PMI®, CAPM®, PMP®, PgMP®, PfMP®, PMI-SP®, PMI-RMP®, PMI-ACP®, PMI-PBA®, and PMBOK® are registered marks and PMI Talent Triangle™ is a trademark of the Project Management Institute.
+                                CSM®, CSP®, CST®, CSPO®, and CSD® are registered marks of the Scrum Alliance.
+                            </div>
+                        </div>
+                        <hr class="my-5" />
+                        <div class="row align-items-center">
+                            <div class="col-md-6 small">Copyright &copy; Procept 2020</div>
+                            <div class="col-md-6 text-md-right small">
+                                <a href="javascript:void(0);">Privacy Policy</a>
+                                &middot;
+                                <a href="javascript:void(0);">Terms &amp; Conditions</a>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+
+        </div>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+        <script src="../js/scripts.js"></script>
+        <script src="../js/overlay.js"></script>
+        <script src="https://unpkg.com/kinet@2.2.1/dist/kinet.min.js"></script>
+        <script>
+            // create instance of kinet with custom settings
+            var kinet = new Kinet({
+            acceleration: 0.06,
+            friction: 0.20,
+            names: ["x", "y"],
+            });
+
+            // select circle element
+            var circle = document.getElementById('circle');
+
+            // set handler on kinet tick event
+            kinet.on('tick', function(instances) {
+            circle.style.transform = `translate3d(${ (instances.x.current) }px, ${ (instances.y.current) }px, 0) rotateX(${ (instances.x.velocity/2) }deg) rotateY(${ (instances.y.velocity/2) }deg)`;
+            });
+
+            // call kinet animate method on mousemove
+            document.addEventListener('mousemove', function (event) {
+            kinet.animate('x', event.clientX - window.innerWidth/2);
+            kinet.animate('y', event.clientY - window.innerHeight/2);
+            });
+
+            // log
+            kinet.on('start', function() {
+            console.log('start');
+            });
+
+            kinet.on('end', function() {
+            console.log('end');
+            });
+
+
+            window.onscroll = function() {myFunction()};
+
+            var header = document.getElementById("myHeader");
+            var sticky = header.offsetTop;
+
+            function myFunction() {
+                if (window.pageYOffset > sticky) {
+                    header.classList.add("sticky");
+                } else {
+                    header.classList.remove("sticky");
+                }
+            }
+
+            //Scroll Script
+            $(document).ready(function() {
+            $(document).on("scroll", onScroll);
+
+            function onScroll(event){
+                var scrollPos = $(document).scrollTop();
+                $('a').each(function () {
+                    var currLink = $(this);
+                    var refElement = $(currLink.attr("href"));
+                    if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
+                        $('a').removeClass("active");
+                        currLink.addClass("active");
+                    }
+                    else{
+                        currLink.removeClass("active");
+                    }
+                    });
+                }
+            })
+
+        </script>
+    </body>
+</html>
