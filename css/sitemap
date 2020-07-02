@@ -1,3 +1,8 @@
 
-#PAGE NAME
-==section - image caption - image size
+#General
+==Page header banners - 1500*900
+
+#HOMEPAGE
+==Black bg section - four cards (Training catalogue, training calendar, case studies, industry insights) - 900x600
+==100vh image bg caption section - (This is a long caption, and the words in blue are to be considered captivating.) - 1500*900
+==Accreditation, university partners, technology partners, and global clients cards - 800*500
